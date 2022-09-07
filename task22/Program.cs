@@ -5,15 +5,13 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int i = 1;
 
 if (number > 0)
-    while (i <= number)
-    {
-    Console.WriteLine(i * i);
-    i++;
-    }
+{
+    for (int i = 1; i <= number; i++)
+    Console.Write(i * i + " ");
+}
 else
 {
-    Console.WriteLine("Введите число больше нуля!");
+    Console.WriteLine("Введите положительное число!");
 }
